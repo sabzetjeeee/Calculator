@@ -11,13 +11,20 @@ class MainActivity : AppCompatActivity() {
     private var inputText1: EditText? = null
     private var viewResult1: TextView? = null
     private var pi = 3.14
+
     private var mainbttn2: Button? = null
     private var inputText2: EditText? = null
     private var viewResult2: TextView? = null
+
     private var mainbttn3: Button? = null
     private var inputText3: EditText? = null
     private var inputText4: EditText? = null
     private var viewResult3: TextView? = null
+
+    private var mainbttn4: Button? = null
+    private var inputText5: EditText? = null
+    private var inputText6: EditText? = null
+    private var viewResult4: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +41,11 @@ class MainActivity : AppCompatActivity() {
         inputText3 = findViewById(R.id.etInput3)
         inputText4 = findViewById(R.id.etInput4)
         viewResult3 = findViewById(R.id.tvResult3)
+
+        mainbttn4 = findViewById(R.id.bttn4)
+        inputText5 = findViewById(R.id.etInput5)
+        inputText6 = findViewById(R.id.etInput6)
+        viewResult4 = findViewById(R.id.tvResult4)
 
         mainbttn1?.setOnClickListener {
             val R0 = inputText1?.text.toString()
@@ -56,6 +68,15 @@ class MainActivity : AppCompatActivity() {
             val b = b0.toDouble()
             val S = a * b
             viewResult3?.text = "S=$S"
+        }
+
+        mainbttn4?.setOnClickListener {
+            val a0 = inputText5?.text.toString()
+            val h0 = inputText6?.text.toString()
+            val a = a0.toDouble()
+            val h = h0.toDouble()
+            val S = 0.5 * a * h
+            viewResult4?.text = "S=$S"
         }
     }
 }

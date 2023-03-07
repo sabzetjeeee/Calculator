@@ -228,7 +228,7 @@
         android:id="@+id/bttn4"
         android:layout_width="146dp"
         android:layout_height="54dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="4dp"
         android:text="Розрахувати"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

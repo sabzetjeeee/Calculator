@@ -4,15 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#808080"
+    >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/tvInfo1"
+        android:layout_width="397dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp"
+        android:text="Розрахунок площі кола"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/etInput1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etInput1"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Введіть радіус кола"
+        app:layout_constraintBottom_toTopOf="@+id/bttn1"
+        app:layout_constraintEnd_toStartOf="@+id/tvResult1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo1" />
+
+    <TextView
+        android:id="@+id/tvResult1"
+        android:layout_width="121dp"
+        android:layout_height="16dp"
+        android:hint="Результат"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/bttn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/etInput1"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo1" />
+
+    <Button
+        android:id="@+id/bttn1"
+        android:layout_width="146dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="586dp"
+        android:text="Розрахувати"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etInput1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
